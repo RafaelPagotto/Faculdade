@@ -1,15 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Novato</title>
+    <meta name="description" content="Aprenda programação web através de exemplos práticos e interativos">
+    <title>Programação Web Metalinguística | Aprenda Fazendo</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/examples.css">
 </head>
 <body>
-    <div>
-        <p>
-            Registros de aprendizados Web.
-        </p>
-    </div>
+    <!-- Header com navegação -->
+    <header class="main-header">
+        <nav class="navigation">
+            <h1 class="site-title">📚 Programação Web</h1>
+            <ul class="nav-menu">
+                <li><a href="#intro">Introdução</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#exemplos">Exemplos</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Aprenda Programação Web Através da Própria Web</h2>
+            <p class="subtitle">Um site metalinguístico que ensina desenvolvimento web usando HTML e CSS</p>
+            <div class="meta-note">
+                <p>💡 <strong>Meta:</strong> Este próprio site é um exemplo de HTML e CSS em ação!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Container principal -->
+    <main class="container">
+        
+        <!-- Seção: Introdução -->
+        <section id="intro" class="content-section">
+            <h2 class="section-title">🎯 O que é Programação Web?</h2>
+            <div class="text-content">
+                <p>Programação web é a criação de páginas e aplicações que funcionam nos navegadores. É composta principalmente por três tecnologias:</p>
+                <ul class="tech-list">
+                    <li><strong>HTML</strong> - Estrutura e conteúdo</li>
+                    <li><strong>CSS</strong> - Apresentação e estilo</li>
+                    <li><strong>JavaScript</strong> - Interatividade e lógica</li>
+                </ul>
+            </div>
+            
+            <div class="learning-note">
+                <h3>📝 Anotação</h3>
+                <p>Esta página usa <code>&lt;section&gt;</code>, <code>&lt;header&gt;</code>, e <code>&lt;main&gt;</code> - elementos semânticos do HTML5 que dão significado à estrutura.</p>
+            </div>
+        </section>
+
+        <!-- Seção: HTML -->
+        <section id="html" class="content-section">
+            <h2 class="section-title">📄 HTML - HyperText Markup Language</h2>
+            
+            <div class="text-content">
+                <h3>O que é HTML?</h3>
+                <p>HTML é a linguagem de marcação que estrutura o conteúdo da web. Ela usa <em>tags</em> (etiquetas) para definir diferentes tipos de conteúdo.</p>
+            </div>
+
+            <div class="example-box">
+                <h4>Exemplo 1: Estrutura Básica</h4>
+                <div class="code-display">
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Minha Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+    &lt;p&gt;Este é meu primeiro parágrafo.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+            </div>
+
+            <div class="learning-note">
+                <h3>📝 Anotação: Tags Comuns</h3>
+                <ul>
+                    <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> - Títulos (hierarquia)</li>
+                    <li><code>&lt;p&gt;</code> - Parágrafos</li>
+                    <li><code>&lt;div&gt;</code> - Container genérico</li>
+                    <li><code>&lt;a&gt;</code> - Links (âncoras)</li>
+                    <li><code>&lt;img&gt;</code> - Imagens</li>
+                    <li><code>&lt;ul&gt;</code>/<code>&lt;ol&gt;</code> - Listas</li>
+                </ul>
+            </div>
+
+            <div class="example-box interactive">
+                <h4>Exemplo 2: Listas e Links (Ao Vivo!)</h4>
+                <div class="live-example">
+                    <h5>Meus Sites Favoritos de Aprendizado:</h5>
+                    <ol>
+                        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                        <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                        <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                    </ol>
+                </div>
+                <p class="example-note">👆 Este é um exemplo real renderizado na página!</p>
+            </div>
+        </section>
+
+        <!-- Seção: CSS -->
+        <section id="css" class="content-section">
+            <h2 class="section-title">🎨 CSS - Cascading Style Sheets</h2>
+            
+            <div class="text-content">
+                <h3>O que é CSS?</h3>
+                <p>CSS é a linguagem que define a aparência visual das páginas web. Ela controla cores, fontes, layouts, espaçamentos e muito mais.</p>
+            </div>
+
+            <div class="example-box">
+                <h4>Exemplo 3: Sintaxe CSS</h4>
+                <div class="code-display">
+                    <pre><code>/* Seletor - Define o que estilizar */
+h1 {
+    color: #2c3e50;           /* Cor do texto */
+    font-size: 2.5rem;        /* Tamanho da fonte */
+    text-align: center;       /* Alinhamento */
+    margin-bottom: 1rem;      /* Espaço externo */
+}
+
+/* Classes - Reutilizáveis */
+.destaque {
+    background-color: #f39c12;
+    padding: 10px;
+    border-radius: 5px;
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="learning-note">
+                <h3>📝 Anotação: Três Formas de Aplicar CSS</h3>
+                <ol>
+                    <li><strong>Inline:</strong> <code>&lt;p style="color: red;"&gt;</code> - Direto no elemento</li>
+                    <li><strong>Interno:</strong> <code>&lt;style&gt;</code> dentro do <code>&lt;head&gt;</code></li>
+                    <li><strong>Externo:</strong> <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code> - Arquivo separado (recomendado!) ✅</li>
+                </ol>
+                <p class="highlight-text">Este site usa CSS externo para melhor organização!</p>
+            </div>
+
+            <div class="example-box interactive">
+                <h4>Exemplo 4: Box Model em Ação</h4>
+                <div class="box-model-demo">
+                    <div class="box-margin">Margin (margem)
+                        <div class="box-border">Border (borda)
+                            <div class="box-padding">Padding (preenchimento)
+                                <div class="box-content">Content (conteúdo)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="example-note">👆 Visualização do modelo de caixa CSS</p>
+            </div>
+
+            <div class="example-box interactive">
+                <h4>Exemplo 5: Cores e Tipografia</h4>
+                <div class="typography-demo">
+                    <p class="demo-text-1">Texto com fonte serif e cor azul</p>
+                    <p class="demo-text-2">Texto com fonte sans-serif e cor verde</p>
+                    <p class="demo-text-3">Texto com fonte monospace e gradiente</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Exemplos Práticos -->
+        <section id="exemplos" class="content-section">
+            <h2 class="section-title">⚡ Exemplos Práticos</h2>
+            
+            <div class="text-content">
+                <p>Aqui estão demonstrações práticas de conceitos importantes de CSS:</p>
+            </div>
+
+            <div class="example-grid">
+                <!-- Card 1: Flexbox -->
+                <div class="example-card">
+                    <h3>Flexbox Layout</h3>
+                    <div class="flex-demo">
+                        <div class="flex-item">1</div>
+                        <div class="flex-item">2</div>
+                        <div class="flex-item">3</div>
+                    </div>
+                    <p class="tech-detail"><code>display: flex;</code></p>
+                </div>
+
+                <!-- Card 2: Grid -->
+                <div class="example-card">
+                    <h3>Grid Layout</h3>
+                    <div class="grid-demo">
+                        <div class="grid-item">A</div>
+                        <div class="grid-item">B</div>
+                        <div class="grid-item">C</div>
+                        <div class="grid-item">D</div>
+                    </div>
+                    <p class="tech-detail"><code>display: grid;</code></p>
+                </div>
+
+                <!-- Card 3: Gradientes -->
+                <div class="example-card">
+                    <h3>Gradientes CSS</h3>
+                    <div class="gradient-demo"></div>
+                    <p class="tech-detail"><code>background: linear-gradient();</code></p>
+                </div>
+
+                <!-- Card 4: Sombras -->
+                <div class="example-card">
+                    <h3>Sombras e Efeitos</h3>
+                    <div class="shadow-demo">
+                        <div class="shadow-box">Hover me!</div>
+                    </div>
+                    <p class="tech-detail"><code>box-shadow</code></p>
+                </div>
+            </div>
+
+            <div class="learning-note">
+                <h3>📝 Anotação: Layouts Modernos</h3>
+                <p><strong>Flexbox</strong> é ideal para layouts unidimensionais (linha ou coluna). <strong>Grid</strong> é perfeito para layouts bidimensionais (linhas e colunas simultâneas).</p>
+            </div>
+        </section>
+
+        <!-- Seção: Recursos de Aprendizagem -->
+        <section id="recursos" class="content-section">
+            <h2 class="section-title">📚 Recursos de Aprendizagem</h2>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>📖 Documentação Oficial</h3>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a> - Referência completa</li>
+                        <li><a href="https://www.w3.org/" target="_blank">W3C</a> - Padrões web</li>
+                        <li><a href="https://html.spec.whatwg.org/" target="_blank">HTML Living Standard</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>🎓 Tutoriais e Cursos</h3>
+                    <ul>
+                        <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> - Gratuito e completo</li>
+                        <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a> - Interativo</li>
+                        <li><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> - Currículo completo</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>🛠️ Ferramentas Úteis</h3>
+                    <ul>
+                        <li><a href="https://codepen.io/" target="_blank">CodePen</a> - Playground online</li>
+                        <li><a href="https://validator.w3.org/" target="_blank">W3C Validator</a> - Valida HTML</li>
+                        <li><a href="https://caniuse.com/" target="_blank">Can I Use</a> - Compatibilidade</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>🎨 Design e Inspiração</h3>
+                    <ul>
+                        <li><a href="https://dribbble.com/" target="_blank">Dribbble</a> - Design inspiration</li>
+                        <li><a href="https://coolors.co/" target="_blank">Coolors</a> - Paletas de cores</li>
+                        <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a> - Fontes gratuitas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="learning-note">
+                <h3>💡 Dica de Estudo</h3>
+                <p>A melhor forma de aprender programação web é <strong>praticando</strong>. Tente recriar sites que você admira, experimente diferentes técnicas e não tenha medo de errar. Cada erro é uma oportunidade de aprendizado!</p>
+            </div>
+        </section>
+
+        <!-- Seção: Estrutura deste site -->
+        <section id="sobre-site" class="content-section highlight-section">
+            <h2 class="section-title">🔍 Sobre Este Site (Metalinguística em Ação!)</h2>
+            
+            <div class="text-content">
+                <p>Este próprio site foi construído usando os conceitos que ele ensina:</p>
+            </div>
+
+            <div class="meta-structure">
+                <div class="structure-item">
+                    <h4>📁 Estrutura de Arquivos</h4>
+                    <pre><code>DesenvolvimentoWeb/
+├── index.html          ← Estrutura (você está aqui!)
+└── styles/
+    ├── styles.css      ← Estilos principais
+    └── examples.css    ← Estilos dos exemplos</code></pre>
+                </div>
+
+                <div class="structure-item">
+                    <h4>🏗️ Elementos HTML Utilizados</h4>
+                    <ul class="tech-list">
+                        <li><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code> - Navegação semântica</li>
+                        <li><code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> - Estrutura do conteúdo</li>
+                        <li><code>&lt;div&gt;</code> com classes - Containers estilizados</li>
+                        <li><code>&lt;pre&gt;</code>, <code>&lt;code&gt;</code> - Exibição de código</li>
+                    </ul>
+                </div>
+
+                <div class="structure-item">
+                    <h4>🎨 Técnicas CSS Aplicadas</h4>
+                    <ul class="tech-list">
+                        <li>Variáveis CSS para cores consistentes</li>
+                        <li>Flexbox e Grid para layouts responsivos</li>
+                        <li>Transições e hover effects</li>
+                        <li>Box shadows e border-radius para profundidade</li>
+                        <li>Media queries para responsividade</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="learning-note">
+                <h3>🎯 Conceito Metalinguístico</h3>
+                <p>Este site é <strong>metalinguístico</strong> porque ele <em>demonstra</em> os conceitos que <em>explica</em>. Ao estudar o código-fonte desta página (clique com o botão direito e selecione "Inspecionar" no navegador), você verá exatamente como cada elemento foi criado!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>🎓 Projeto de Programação Web | Criado com ❤️ usando HTML e CSS</p>
+            <p class="footer-meta">Um exemplo metalinguístico de desenvolvimento web</p>
+            <p class="footer-year">2026</p>
+        </div>
+    </footer>
+
 </body>
 </html>

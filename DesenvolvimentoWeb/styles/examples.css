@@ -1,0 +1,334 @@
+/* ========================================
+   EXEMPLOS PRÁTICOS DE CSS
+   Este arquivo contém estilos para demonstrações visuais
+   ======================================== */
+
+/* ========================================
+   EXEMPLO: BOX MODEL
+   Demonstra margin, border, padding e content
+   ======================================== */
+.box-model-demo {
+    margin: 1.5rem 0;
+    font-family: monospace;
+    font-size: 0.85rem;
+}
+
+.box-margin {
+    background-color: #ffeaa7;
+    padding: 15px;
+    border: 2px dashed #fdcb6e;
+    text-align: center;
+}
+
+.box-border {
+    background-color: #fab1a0;
+    padding: 15px;
+    border: 4px solid #e17055;
+    margin-top: 10px;
+}
+
+.box-padding {
+    background-color: #a29bfe;
+    padding: 15px;
+    border: 2px solid #6c5ce7;
+    margin-top: 10px;
+}
+
+.box-content {
+    background-color: #55efc4;
+    padding: 20px;
+    border: 2px solid #00b894;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2d3436;
+}
+
+/* ========================================
+   EXEMPLO: TIPOGRAFIA E CORES
+   ======================================== */
+.typography-demo {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.demo-text-1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #ecf0f1;
+    border-left: 4px solid #3498db;
+}
+
+.demo-text-2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #27ae60;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #d5f4e6;
+    border-left: 4px solid #27ae60;
+}
+
+.demo-text-3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    background: linear-gradient(90deg, #e74c3c, #f39c12, #27ae60);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+/* ========================================
+   EXEMPLO: FLEXBOX
+   Layout unidimensional flexível
+   ======================================== */
+.flex-demo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 1.5rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    min-height: 100px;
+}
+
+.flex-item {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    min-width: 60px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.flex-item:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================
+   EXEMPLO: GRID
+   Layout bidimensional em grade
+   ======================================== */
+.grid-demo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    min-height: 150px;
+}
+
+.grid-item {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+/* ========================================
+   EXEMPLO: GRADIENTES
+   Demonstra diferentes tipos de gradientes
+   ======================================== */
+.gradient-demo {
+    height: 150px;
+    border-radius: 8px;
+    background: linear-gradient(
+        135deg,
+        #667eea 0%,
+        #764ba2 25%,
+        #f093fb 50%,
+        #f5576c 75%,
+        #4facfe 100%
+    );
+    animation: gradientShift 5s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ========================================
+   EXEMPLO: SOMBRAS E EFEITOS
+   ======================================== */
+.shadow-demo {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.shadow-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.shadow-box:hover {
+    box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+    transform: translateY(-5px);
+}
+
+/* ========================================
+   ANIMAÇÕES EXTRAS
+   ======================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animação aos cards quando carregam */
+.example-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.example-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.example-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.example-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.example-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* ========================================
+   EFEITOS DE HOVER INTERATIVOS
+   ======================================== */
+.live-example ol li {
+    transition: all 0.2s ease;
+    padding: 0.3rem;
+    border-radius: 4px;
+}
+
+.live-example ol li:hover {
+    background-color: #e3f2fd;
+    padding-left: 1rem;
+}
+
+/* ========================================
+   RESPONSIVIDADE DOS EXEMPLOS
+   ======================================== */
+@media (max-width: 768px) {
+    .grid-demo {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    
+    .flex-demo {
+        flex-direction: column;
+    }
+    
+    .box-model-demo {
+        font-size: 0.75rem;
+    }
+    
+    .shadow-box {
+        padding: 1.5rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .demo-text-1,
+    .demo-text-2,
+    .demo-text-3 {
+        font-size: 1rem;
+    }
+    
+    .flex-item,
+    .grid-item {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .gradient-demo {
+        height: 100px;
+    }
+}
+
+/* ========================================
+   DICAS VISUAIS
+   ======================================== */
+.example-box.interactive::before {
+    content: "⚡ Interativo - Passe o mouse!";
+    display: block;
+    font-size: 0.85rem;
+    color: #0277bd;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* ========================================
+   ACESSIBILIDADE
+   ======================================== */
+.flex-item:focus,
+.grid-item:focus,
+.shadow-box:focus {
+    outline: 3px solid #f39c12;
+    outline-offset: 2px;
+}
+
+/* Reduzir animações para usuários com preferências */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
