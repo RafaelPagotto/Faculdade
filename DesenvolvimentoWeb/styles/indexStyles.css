@@ -1,7 +1,7 @@
 :root {
     --bg: #f3f4f6;
     --surface: #ffffff;
-    --text: #111827;
+    --text: #000000;
     --muted: #4b5563;
     --line: #d1d5db;
     --accent: #1f2937;
@@ -18,7 +18,7 @@ html {
 body {
     margin: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     color: var(--text);
     background-color: var(--bg);
 }
